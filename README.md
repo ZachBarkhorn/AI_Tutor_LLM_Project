@@ -60,7 +60,7 @@ The project demonstrates how LLMs can be adapted into **purpose-built tools** in
 
 2. Install dependencies:
 
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 
 3. Set your Ollama API key (from ollama.com) as an environment variable.
