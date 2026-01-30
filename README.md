@@ -1,47 +1,88 @@
-AI Python Tutor
+# AI Python Tutor
 
-An interactive AI-powered Python tutor for beginners. This project allows users to learn Python concepts, generate examples, debug code, practice exercises, and get feedback on their answers using a large language model (LLM).
+An interactive, AI-powered Python tutor designed for beginners.  
+This project uses a large language model (LLM) to explain Python concepts, generate examples, debug code, create practice exercises, and evaluate student responses through a command-line interface.
 
-Features
+The system focuses on **prompt engineering**, **structured LLM outputs**, and **token-efficient design** to tailor responses for specific educational tasks.
 
-    Explain a concept — Get a step-by-step explanation of any Python topic.
+---
 
-    Debug code — Check for common errors and get guidance on fixes.
+## Why I Built This
 
-    Generate example — Create a simple Python example demonstrating a concept.
+This project was developed as part of my **Artificial Intelligence coursework**, with the goal of exploring how **prompt engineering and tokenization strategies** can be used to guide large language models toward more accurate, task-specific outputs.
 
-    Create an exercise — Generate beginner-level exercises for practice.
+Rather than treating the LLM as a general chatbot, this project emphasizes:
+- Designing **task-constrained prompts** based on user intent
+- Structuring prompts to maximize clarity while minimizing unnecessary token usage
+- Using different prompt templates to optimize model behavior for explanation, debugging, and evaluation tasks
 
-    Evaluate an answer — Assess a student’s answer and provide feedback.
+The project demonstrates how LLMs can be adapted into **purpose-built tools** instead of generic conversational systems.
 
-All interactions are automatically logged with metrics for analysis.
+---
 
-In order to setup, clone the repository onto the system. Install the dependencies
-    and set the API key to one of your own from ollama.com
+## Features
 
----------------------------------------------------------------------------
+- **Explain a concept**  
+  Provides clear, step-by-step explanations of Python topics tailored for beginners.
 
-Usage
+- **Debug code**  
+  Identifies common Python errors and offers guided suggestions for fixing them.
 
-    Run the main application:
+- **Generate examples**  
+  Creates simple Python code examples demonstrating specific concepts.
 
-    python main.py
+- **Create exercises**  
+  Generates beginner-level practice problems for hands-on learning.
 
-    Follow the menu to explore the features:
+- **Evaluate answers**  
+  Assesses a user’s solution and provides constructive, targeted feedback.
 
-        Explain a concept
+- **Interaction logging**  
+  Automatically logs prompts, responses, and usage metrics for analysis and future improvement.
 
-        Debug code
+---
 
-        Generate an example
+## Technologies Used
 
-        Create an exercise
+- Python  
+- Ollama Cloud API (LLM inference)  
+- Prompt engineering for task-specific outputs  
+- Command-line interface (CLI)
 
-        Evaluate an answer
+---
 
-    After entering what kind of response is desired from the model, simple enter your prompt into the 
-    terminal and the model will do the rest. Intertwined in the design of the response are prompts
-    carefully engineered to output what is most desired by the user. These prompts are determined by the menu option of 
-    what the user wants the model to excel at.
+## Setup
 
-    Enjoy the AI Tutor!
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
+
+2. Install dependencies:
+
+pip install -r requirements.txt
+
+
+3. Set your Ollama API key (from ollama.com) as an environment variable.
+
+## Usage
+
+Run the main application:
+
+python main.py
+
+
+Use the interactive menu to select a mode:
+
+Explain a concept
+
+Debug code
+
+Generate an example
+
+Create an exercise
+
+Evaluate an answer
+
+After selecting a mode, enter your prompt in the terminal.
+The application dynamically applies mode-specific prompt templates designed to guide the LLM toward accurate, beginner-friendly responses optimized for the selected task.
